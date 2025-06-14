@@ -1,0 +1,1684 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+	
+}
+
+a{
+	text-decoration:none;
+}
+
+
+
+/** HEADER AND FOOTER FOR ALL PAGE STARTS HERE */
+/* Style the body section for uploading pictures */
+html{
+	height:100%;
+}
+body{
+    font: 1 em solid Arial, sans-serif;
+    background-color: #F0E1CE;
+	height:100%;
+	bottom:0;
+}
+
+/*article starts here */
+article{
+	background-color: white;
+	width: 90%;
+	padding: 10% 0;
+	margin: 19% auto;
+	border-radius: 25px;
+}
+
+h3 {
+    text-align: center;
+   
+    color: #333;
+	font-size: 2em;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+form input[type="file"] {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.index-upload form input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Center the iframe */
+iframe {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+	width:50%;
+    height:500px;
+
+	border:none;
+}
+
+
+
+
+
+
+/* Style the header */
+header {
+	width:100%;
+	height: 120px;
+	top:0;
+	position: fixed;
+	background-image: url(images/testbg.jpeg);
+	background-size:  200px;
+	z-index:1;
+}
+
+.header{
+	margin: 5px 50px;
+	width:100%;
+	
+}
+
+/* Style the navigation menu */
+nav {
+	width:100%;
+	height:100%;
+	display:inline-block;
+	white-space:nowrap;
+
+}
+
+/* Style the left navigation section (logo and website name) */
+.left-nav{
+	width:12%;
+	max-width:12%;
+	height:100%;
+	display:inline-block;
+	vertical-align:middle;
+	margin-right:20%;
+
+	
+}
+
+
+.left-nav img{
+	width:50%;
+	height:100%;
+	border-radius:90px;
+
+	margin-left: 13%;
+}
+
+/* Style the website name */
+.left-nav>h2{
+	width:75%;
+	background-color: white;
+	color:green;
+	font: 1em Verdana,sans-serif;
+	text-align:center;
+	border-radius: 15px;
+	margin-bottom: 10px;
+}
+
+/* Style the right navigation section (menu toggle and links) */
+.right-nav {
+	
+	max-width:70%;
+	display:inline-block;
+	vertical-align:middle;
+	Background-color:white;
+	border-radius:25px;
+	border: 1px solid green;
+}
+
+
+.right-nav>a{
+	display:inline-block;
+	margin: 0 auto;
+	padding:2% 20px;
+	
+	
+
+}
+
+
+
+/* Style the regular links in the right navigation section */
+.right-nav a {
+   color:black;
+
+}
+
+/* Add hover effect to regular links */
+.right-nav a:hover {
+	background-color:pink;
+	border-radius: 25px;
+	border:1px solid black;
+}
+
+
+.dropdown{
+	position:relative;
+	display: inline-block;
+	
+}
+
+/* Dropbutton here Changes the looks of the button */
+.dropbutton{
+	background-color: white;
+	color: black;
+	padding:10px;
+	font: 1 em solid Arial, sans-serif;
+	cursor: pointer;
+	height:50px;
+	border:none;
+	
+	
+}
+
+.dropbutton:hover{
+	border:1px solid black;
+	border-radius: 15px 15px 0px 0px;
+}
+
+/* Display none to remove the drop down, position absolute to stop drop down from pushing content below, z-index can be think as pages, element with z-index of 1 will be infront of element with index of 0*/
+.dropdown-content{
+	display: none;
+	position: absolute;
+	min-width:200px;
+	box-shadow:0px 8px 16px 0px rgba9(0,0,0,0.2);
+	z-index:0;
+	border-radius: 0px 15px 15px 15px;
+	border:1px solid black;
+
+}
+
+/* color to change text color, padding to make square box size, text-decoration none to remove underline, display block to make all data vertical*/
+.dropdown-content a{
+	color:white;
+	padding:12px 16px;
+	text-decoration:none;
+	display:block;
+
+	
+}
+
+/*when hover over content background color shown*/
+.dropdown-content a:hover{
+
+	border: 1px solid black;
+	border-radius:15px;
+	transition:0.1s;
+	background-color:pink;
+}
+
+/*display block so that when hover down it will be vertical*/
+.dropdown:hover .dropdown-content {
+	display:block;
+	top:100%;
+	left:1%;
+	
+}
+
+/*changes box css */
+.dropdown:hover .dropbutton{
+	background-color: white;
+	
+	
+}
+
+
+/* Style the label on hover */
+.dropbtn:hover {
+    background-color: #555; /* Change background color on hover */
+}
+
+/* Adjust the position of the dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 10%; /* Position it just below the hamburger icon */
+    margin-top: 0; /* Remove margin or padding */
+}
+
+
+/* Style the dropdown links */
+.dropdown-content a {
+    color: black; /* Text color for dropdown links */
+    padding: 12px 16px; /* Add padding to the dropdown links */
+    text-decoration: none; /* Remove underlines from dropdown links */
+    display: block; /* Make dropdown links block-level elements */
+}
+
+/* Add a hover effect to dropdown links */
+.dropdown-content a:hover {
+   background-color:pink; /* Background color on hover */
+}
+
+
+
+
+
+
+/* Style the links in the footer */
+
+footer {
+    background-color: #333; /* Background color */
+    color: #fff; /* Text color */
+    padding: 20px; /* Add some padding to the footer */
+	bottom:0;
+	height:35%;
+}
+
+
+
+.footer-main{
+
+	display:flex;
+	justify-content:space-around;
+	margin:20px;
+	
+}
+
+/* Style the "About Us" section */
+.about-us {
+
+	width: 60%;
+ 
+}
+
+h4,h5{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+	padding-left:3%;
+	font-family: Comfortaa, sans-serif;
+}
+/* Style the "Main Menu" section */
+.footer-acknowledgement{
+	width: 45%;
+	padding-right:3%;
+}
+.footer-acknowledgement ul{
+
+	width: 100%;
+	display:flex;
+	height:100%;
+	
+}
+
+.footer-acknowledgement h5{
+	padding:0px 20px;
+	
+}
+
+.footer-acknowledgement ul li,p{
+	padding: 10px 20px;
+	list-style: none; /* Remove bullet points from the list */
+
+}
+
+
+.footer-acknowledgement ul li a {
+    color: #fff; /* Link text color */
+    text-decoration: none; /* Remove underlines from links */
+}
+
+/* Add hover effect to links */
+.footer-acknowledgement ul li a:hover {
+    text-decoration: underline;
+}
+
+	.update>p{
+		text-align:center;
+		font-style: italic;
+	}
+
+/** HEADER AND FOOTER FOR ALL PAGE ENDS HERE **/
+
+/* CSS FOR INDEX STARTS HERE */
+.index-intro-about{
+	margin: 0 auto;
+	width: 60%;
+	border:1px solid #07FF06;
+	display:flex;
+	padding: 25px;
+	background-color: black;
+	border-radius: 25px;
+	box-shadow: 0px 0px 50px 5px #07FF06;
+	margin-bottom: 10%;
+	transition:0.5s;
+}
+
+.index-intro-about:hover{
+	transform:scale(1.1)
+}
+.index-intro-about-text>h2{
+	color:white;
+	padding:  15px 25px;
+	font-size:30px;
+}
+.index-intro-about-text>p{
+	color:white;
+	word-spacing:5px;
+	padding: 10px;
+	font-size: 20px;
+}
+
+#intro-highlight{
+	color:#07FF06;
+	font-weight:bold;
+}
+.index-intro-about>img{
+	display:flex;
+	border-radius: 25px;
+	
+	
+}
+.index-upload [type="file"]{
+	width: 300px;
+
+}
+
+.index-upload form{
+	margin:0 auto;
+}
+	
+/*CSS FOR INDEX ENDS HERE */
+
+/*explorer css starts here */
+
+.explorer{
+	display:flex;
+	justify-content:center;
+}
+
+.explorer>p{
+	height:1000px;
+}
+	
+.explorer table{
+	position:absolute;
+	padding:15px;
+	width: 95%;
+	border:1px solid green;
+	border-radius: 20px;
+	background-color: #8AD3A8;
+	margin: 0 auto;
+	
+}
+
+.table2{
+	visibility:hidden;
+}
+.explorer td{
+	background-color:white;
+	border:1px solid black;
+	width: 100%;
+	height: 230px;
+	border-radius:20px;
+	transition:0.3s;
+}
+
+
+
+.explorer td:hover{
+	transform:scale(1.05);
+	transition:0.3s;
+}
+
+
+
+.explorer td img{
+	border:1px solid green;
+	margin-left: 10px;
+	width: 55%;
+	border-radius: 15px;
+}
+.explorer td figure{
+	width: 20%;
+	float:left;
+}
+
+
+
+.main-tabs {
+  position: relative;
+  min-height: 1300px;
+  width: 80%;
+  clear: both;
+  margin: 0px 0;
+
+}
+.main-tab {
+  float: left;
+  
+}
+.main-tab label {
+  background: #eee;
+  padding: 10px 100px;
+  border: 1px solid #ccc;
+  margin-left: -1px;
+  position: relative;
+  left: 1px;
+  border-radius: 15px 15px 0 0;
+}
+.main-tab [type="radio"] {
+  opacity: 0;
+}
+.main-content {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background: white;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+.main-content > * {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 0.6s ease;
+}
+/* this is intentionally left with an error to help debugging in future*/
+[type="radio"]:focus ~ label {
+  outline: 2px solid blue;
+}
+[type="radio"]:checked ~ label {
+  background: white;
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+[type="radio"]:checked ~ label ~ .main-content {
+  z-index: 1;
+}
+[type="radio"]:checked ~ label ~ .main-content > * {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+.tabs {
+  position: relative;
+  min-height: 1100px;
+  clear: both;
+  width: 100%
+}
+.tab {
+  float: left;
+  width: 25%;
+}
+.tab label {
+  background: #eee;
+  padding: 10px 30%;
+  border: 1px solid black;
+  margin-left: -1px;
+  position: relative;
+  left: 1px;
+  border-radius: 15px 15px 0 0;
+}
+.tab [type="radio"] {
+  opacity: 0;
+}
+
+
+.tab-content {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background: white;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+.tab-content > * {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 0.6s ease;
+}
+
+[type="radio"]:checked ~ label {
+  background: white;
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+[type="radio"]:checked ~ label ~ .tab-content {
+  z-index: 1;
+}
+[type="radio"]:checked ~ label ~ .tab-content > *{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+
+/* Overlay for Pop-up */
+.image-container {
+    position: relative;
+    display: inline-block;
+
+}
+
+
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+	border-radius: 20px;
+}
+
+/* Show overlay on hover */
+.image-container:hover .overlay {
+    display: block;
+	transition: 1s;
+	
+}
+
+/* Pop-up Image */
+.full-image {
+    max-width: 18%;
+    max-height: 100%;
+	float:left;
+    
+    transform: translate(0, 0);
+	transition: 2s;
+	border:1px solid black;
+}
+
+.explorer p{
+	padding: 20px 0;
+}
+
+/** EXPLORER CSS ENDS HERE*/
+
+/**ENQUIRY FORM CSS STARTS HERE**/
+
+.signup-form1{
+  font-family: "Roboto", sans-serif;
+  width:650px;
+  margin:30px auto;
+  background:linear-gradient(to right, #ffffff 0%, #fafafa 50%, #ffffff 99%);
+  border-radius: 10px;
+  margin:0 auto;
+  margin-bottom:100px;
+  margin-top:150px;
+}
+
+.form-header  {
+  background-color: #EFF0F1;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.form-header h1 {
+  font-size: 30px;
+  text-align:center;
+  color:#666;
+  padding:20px 0;
+  border-bottom:1px solid #cccccc;
+}
+
+.form-body .form-input {
+    font-size: 17px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 34px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #333333;
+    text-align: left;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+    background: white;
+}
+
+.form-group{
+  margin-bottom:20px;
+}
+.form-body {
+  padding:10px 40px;
+  color:#666;
+}
+
+.form-body .label-title {
+  color:#1BBA93;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+
+.horizontal-group .left{
+  float:left;
+  width:49%;
+}
+
+.horizontal-group .right{
+  float:right;
+  width:49%;
+}
+
+input[type="file"] {
+ outline: none;
+ cursor:pointer;
+ font-size: 17px;
+}
+
+
+#range-label {
+ width:15%;
+ padding:5px;
+ background-color: #1BBA93;
+ color:white;
+ border-radius: 5px;
+ font-size: 17px;
+ position: relative;
+ top:-8px;
+}
+
+.form-footer .form-left{
+ clear:both;
+
+}
+
+.signup-form .form-footer  {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+ padding:10px 10px;
+  border-top: 1px solid #cccccc;
+    bottom: 0;
+}
+
+
+
+.form-footer span {
+  float:right;
+  margin-top: 10px;
+  color:#999;  
+  font-style: italic;
+
+}
+
+	
+.btn {
+   display:inline-block;
+   padding:5px 5px;
+   background-color: #1BBA93;
+   font-size:17px;
+   border:none;
+   border-radius:5px;
+   color:#bcf5e7;
+   cursor:pointer;
+   text-align: center;
+}
+
+.btn:hover {
+  background-color: #169c7b;
+  color:white;
+}
+.paragraph{
+	color:#5386AD;
+}
+/**ENQUIRY FORM CSS ENDS HERE **/
+
+/**CONTRIBUTORS CSS STARTS HERE **/
+.sec{
+    position: relative; left: 100px; top: 200px;
+}
+
+.sec p{
+    text-align: center;
+}
+
+.row{
+    position: relative;
+}
+
+p{
+    text-align: left;
+}
+
+aside {
+    text-align: center;
+    width: 13%;
+    line-height: 20px;
+    padding-left: 0px;
+    margin-left: 0px;
+    float: none;
+    font-style: italic;
+    background-color: rgb(137, 137, 137);
+    overflow: hidden;
+}
+
+.pop{
+    float: left;
+    padding: 20px;
+    display: inline-flex;
+    height: 88%;
+    align-items: center;
+    column-gap: 30px;
+    position: relative; left: 10px;
+}
+
+
+.card {
+    position: relative;
+    margin: 50px;
+    width: 200px;
+    height: 200px;
+    background-color: antiquewhite;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card-label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 200px;
+    font-size: 18px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 650px;
+    height: 400px;
+    background-color: #BAD3A8;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    z-index: 1;
+}
+
+.popup h2 {
+    margin: 0;
+}
+
+.popup-content p {
+    margin: 10px 0;
+}
+
+.popup-label {
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.popup-label:hover {
+    background-color: #0056b3;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked + .popup {
+    display: block;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+}
+
+.close-button:hover {
+    color: #000;
+}
+
+.canarium{
+    width: 200px;
+    height: 300px;
+    border-radius: 25px;
+}
+
+.Horsf{
+    width: 200px;
+    height: 300px;
+    border-radius: 25px;
+}
+
+.knema{
+    width: 200px;
+    height: 300px;
+    border-radius: 25px;
+}
+
+.vatica{
+    width: 200px;
+    height: 300px;
+    border-radius: 25px;
+}
+
+.costata{
+    width: 200px;
+    height: 300px;
+    border-radius: 25px;
+}
+
+.hopea{
+    width: 200px;
+    height: 300px;
+    border-radius: 25px;
+}
+
+.main{
+    font-size: large;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.main p{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.first{
+    position: relative; 
+	right: 350px;
+}
+
+.second{
+    position: relative; 
+	bottom: 330px;
+    padding-left: 10px;
+    background-color: white;
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.second h3{
+    text-align: left;
+}
+
+.pop ul li{
+    position: relative; left: 0.1px;
+    padding: 10px;
+    text-align: left;
+    line-height: 25px;
+    list-style-type: none;
+    position: relative; right: 15px;
+}
+
+
+/**CONTRIBUTORS CSS ENDS HERE */
+
+/**IDENTIFY CSS STARTS HERE */
+
+/* Upload Box CSS */
+.upload-box {
+    background-color: #164406; /* Set the background color to green */
+    color: white; /* Text color */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    margin: 20px auto; /* Center the box horizontally and add space around it */
+    text-align: center; /* Center text within the box */
+}
+
+/* Style the "Upload Plants Pictures" heading */
+.upload-box>h3 {
+    font-family: "Times New Roman", Times, serif;
+    margin-bottom: 20px; /* Add some space below the heading */
+	color:white;
+	font-size: 25px;
+}
+
+/* Style the file input */
+
+.identifycontainer input[type="file"] {
+    display: block;
+    width: 250px;
+    background-color: white; /* Set the background color of the file input to white */
+    color: black; /* Text color of the file input */
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+	
+	
+}
+.identifycontainer form{
+	background-color:#164406;
+	border:0;
+	box-shadow:none;
+
+}
+/* Style the submit button */
+.identifycontainer input[type="submit"] {
+    background-color: MediumSeaGreen;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Style the .identifycontainer */
+.identifycontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* CSS for video section */
+.video-container {
+
+    margin-top: 20px;
+}
+
+.video-container>h2 {
+	text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.video-container iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+	
+}
+
+.video-iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border: none; 
+}
+/*IDENTIFY CSS ENDS HERE*/
+
+/*ABOUT US CSS STARTS HERE */
+
+.group{
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.word{
+	color: #777;
+}
+
+.line {
+
+    cursor: pointer;
+    transition: transform 0.5s;
+    margin: 0 auto; /* Center horizontally */
+	
+}
+
+.line>h2{
+	text-align:center;
+}
+.line>p{
+	width: 70%;
+	margin:0 auto;
+	text-align:center;
+}
+
+.line:hover{
+	transform: translateY(-10px);
+}
+
+.name{
+    color:#333;
+	text-align: center;
+    border: 2px solid gray; /* Green border */
+    border-radius: 30px; /* Make the border round by using a large radius */
+    padding: 5px 10px; /* Add padding for spacing */
+    width: 90px;
+    margin: auto;
+	margin-left:25px;
+}
+
+
+.about_article{
+    
+	width: 100%;
+	margin: auto;
+
+}
+
+
+.about_article h2{
+	margin-top: 30px
+}
+
+.col-4{
+	flex-basis: 25%;
+	padding: 10px;
+	min-width: 200px;
+	margin-bottom: 50px;
+	transition: transform 0.5s;
+}
+
+.col-4 figure img{
+	border:1px solid black;
+	border-radius:25px;
+}
+
+
+.col-4 figcaption{
+	color: #555;
+	font-weight: normal;
+	margin-right: 20px;
+}
+
+.col-4 p{
+	font-size: 14px;
+}
+
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+	margin-left:260px;
+}
+
+.col-4:hover{
+	transform: translateY(-5px)
+}
+
+
+/* Registration form */
+
+
+
+
+/* styles.css */
+
+/* Reset default browser styles */
+body, h1, form, p, legend {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Style the registration form container */
+
+.registration_article {
+    padding: 20px;
+    margin: 50px auto; /* Center the container horizontally */
+    width: 80%; /* Adjust the width as needed */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the registration form and form elements */
+.registration {
+    display: flex;
+    flex-direction: column;
+
+	margin:0 auto;
+}
+
+.registration_fieldset {
+   
+    border-radius: 5px;
+    padding: 10px;
+    width: 70%;
+    margin: auto;
+
+}
+
+/* Style labels and form inputs */
+.register_form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.register_form input[type="text"],
+.register_form input[type="date"],
+.register_form input[type="email"],
+.register_form input[type="tel"],
+.register_form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Style the submit and reset buttons */
+.registration_submit {
+	display:flex;
+	border: 1px solid black;
+	background-color:#4caf50;
+	color:white;
+	padding: 10px 20px;
+	margin: 10px;
+	border-radius: 5px;
+	cursor:pointer;
+}
+
+
+.registration_submit .button {
+	border:1px solid black;
+    background-color: #4caf50; /* Green button background color */
+    color: white;
+	padding: 10px 20px;
+	margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+	
+}
+
+
+
+
+
+
+
+/* profile page */
+
+.profile_container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+}
+
+.profile_page{
+    margin-bottom: 40px;
+    padding: 20px;
+    margin: auto;
+    border: 2px solid grey;
+    border-radius: 10px;
+    background-color :#666;
+    width: 75%;
+}
+.profile_image{
+    width: 150px;
+    height: 150px;
+}
+
+
+.student_info{
+    color: white;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.profile_table{
+    border: 1px solid white;
+    color: white;   
+    border-collapse: collapse;
+}
+
+.profile_table table, th,td{
+	border:1px solid white;
+}
+.profile_table_col{
+    padding: 5px;
+    font-weight: 500;
+    font-size: 20px;
+    height: 30px;
+    border: 1px solid white;
+    text-align:justify;
+}
+
+.email_me_col{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.email_me{
+    display: grid;
+    height: 150px;
+    color: white;
+}
+
+.button_container{
+    place-self: center;
+    background-color: lightgrey;
+    padding: 5px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+.mailto{
+    text-decoration: none;
+    color: black;
+}
+
+.col-4 img{
+	width: 150px;
+	height: 150px;
+}
+
+
+
+
+
+
+
+/*sign up*/
+.login-page{
+    padding: 0 100px 300px 100px;
+
+}
+.signup-form{
+	margin:0 auto;
+    position:absolute;
+    right: 36%;
+    width:650px;
+    border-radius: 10px;
+    margin-bottom:100px;
+
+}
+
+.signup-form .btn{
+    margin-right:100px;
+}
+/* Style the signup link and button */
+.signup-link {
+    text-align: center; /* Center the text */
+}
+.login{
+    margin-top: 10px;
+    width: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signup-button {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid #4caf50; /* Add a border around the button */
+    background-color: white;
+    color: #4caf50;
+    text-decoration: none; /* Remove underline */
+    border-radius: 50px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.signup-button:hover {
+    background-color: #4caf50; /* Change background color on hover */
+    color: white;
+    border-color: #4caf50; /* Change border color on hover */
+}
+
+
+.input-group {
+    margin: auto;
+    width: 50%;
+}
+.input-groups{
+    margin: auto;
+    margin-left: 25%
+}
+.input-groups button:hover {
+    background-color: #4caf50; /* Change background color on hover */
+    color: white;
+    border-color: #4caf50; /* Change border color on hover */
+}
+
+.registration_fieldset, .input-group {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.registration_form>label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+input[type="tel"],
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    
+}
+/**Login Page Admin and user login page swap**/
+.login-page .signup-form{
+    padding: 20px 0 0 0;
+    display:none;
+}
+
+#admin-button:checked ~ #adminsignup,
+#user-button:checked ~ #usersignup {
+    display: block;
+    
+}
+
+
+/* Style the login submit button */
+#login .btn {
+    text-align: center;
+    background-color: #4caf50; /* Green button background color */
+
+}
+
+
+/*ABOUT US CSS ENDS HERE */
+
+/**ENCHANCEMENT CSS STARTS HERE **/
+
+.enchancement{
+	margin: 0 auto;
+	width: 80%;
+	border: 1px solid green;
+}
+
+.enchancement ol>li{
+	background-color: #d3d3d3;
+	list-style-type:none;
+	width:90%;
+	
+}
+
+.enchancement ol>li>ol>li{
+	list-style-type:upper-roman;
+}
+
+.enchancement h5{
+	background-color: grey;
+}
+/**ENCHANCEMENT CSS ENDS HERE **/
+
+#myTable{
+    background-color: lightgreen;
+}
+
+/** Admin page CSS STARTS HERE **/
+.admin-dashboard{
+    width:auto;
+    height:140vh;
+}
+
+.admin-dashboard-container{
+    background-color: #dedede;
+    border-radius: 20px 20px 20px 20px;
+    width:90%;
+    height:60%;
+    margin: 0 auto;
+    top:200px;
+    box-shadow: 0px 0px 50px 1px #0C59E0;
+    position: relative; /* Add this line */
+}
+
+.admin-dashboard-innercontainer{
+    border:1px solid black;
+    margin:  auto;
+    margin-top: 50px;
+    width:center;
+    height:60%;
+    display:flex;
+    justify-content:center;
+    overflow:hidden;
+    border-radius:25px;
+    background-image: -webkit-linear-gradient(top, #0C59E0 0%, #333333 200px);
+    box-shadow: 0px 0px 50px 1px white;
+    position: relative; /* Add this line */
+}
+
+.admin-dashboard-card{
+    width: auto;
+    height: 75%;
+    display:inline-block;
+    background-color: #eda823;
+    margin: 5% 2%;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 0px 50px 1px #0C59E0;
+    transition:0.5s;
+}
+
+.admin-dashboard-card p{
+    text-align:center;
+    font-size: 20px;
+}
+
+.admin-dashboard-card img{
+    width:90%;
+    padding: 10px 10px;
+    height: 75%;
+    border-radius:20px;
+}
+
+.admin-dashboard-card:hover{
+    transform:scale(1.2);
+    transition:0.5s;
+}
+
+.admin-dashboard-container h3{
+    text-align:center;
+    font-size: 50px;
+    font-family: Showcard Gothic, sans-serif;
+    letter-spacing: 5px;
+    
+    background: -webkit-linear-gradient(left, #ed0821 , #eda823);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form-button {
+    position: absolute;
+    bottom: 60px; /* Adjust the bottom position */
+    right: 40px; /* Adjust the right position */
+}
+
+.signup-form .form-footer  {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+ padding:10px 10px;
+  border-top: 1px solid #cccccc;
+    bottom: 0;
+}
+
+
+
+.form-button span {
+  float:right;
+  margin-top: 10px;
+  color:#999;  
+  font-style: italic;
+
+}
+
+	
+.adminb {
+   display:inline-block;
+   padding:15px 10px;
+   background-color:#6699CC;
+   font-size:17px;
+   border:none;
+   border-radius:5px;
+   color:#bcf5e7;
+   cursor:pointer;
+   text-align: center;
+}
+
+.adminb:hover {
+  background-color: #13274F;
+  color:white;
+}
+
+/** Admin Page CSS ENDS HERE **/
+
+/** VIEW ENQUIRIES AND REGISTER STARTS HERE**/
+.view-enquiry table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: lightgreen;
+}
+
+.view-enquiry th,
+td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 12px; 
+}
+
+.view-enquiry th {
+    background-color: lightgreen; 
+}
+
+.view-enquiry .button-container {
+    text-align: right;
+    margin-top: 10px; 
+}
+
+.view-enquiry .button {
+    color: #fff;
+    background-color: #808080; /* Grey color for the button */
+    border: 1px solid #808080; /* Match the border color to the background color */
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.view-enquiry .button:hover {
+    background-color: #404040; /* Darker shade on hover, you can adjust */
+}
+
+.view-enquiry #editForm {
+    display: none;
+    margin-top: 20px;
+}
+
+.view table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.view th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 12px; /* Adjust the padding as needed */
+}
+
+.view .button-container {
+    text-align: right;
+    margin-top: 10px; /* Adjust the margin as needed */
+}
+
+.view #editForm {
+    display: none;
+    margin-top: 20px;
+}
+/** VIEW ENQUIRIES AND REGISTER ENDS HERE**/
+
+/** DeLETE ENQUIRIES AND REGISTER STARTS HERE**/
+.delete-register table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.delete-register th, td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 12px; /* Adjust the padding as needed */
+}
+
+.delete-register .button-container {
+    text-align: right;
+    margin-top: 10px; /* Adjust the margin as needed */
+}
+
+.delete-register #editForm {
+    display: none;
+    margin-top: 20px;
+}
+.delete-enquiry table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.delete-enquiry th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 12px; /* Adjust the padding as needed */
+}
+
+.delete-enquiry .button-container {
+    text-align: right;
+    margin-top: 10px; /* Adjust the margin as needed */
+}
+
+.delete-enquiry #editForm {
+    display: none;
+    margin-top: 20px;
+}
+/** DELETE ENQUIRIES AND REGISTER ENDS HERE**/
